@@ -8,7 +8,7 @@ To annotate an image we need two software
 
       You need install [Anaconda](https://www.anaconda.com/download/) then run below in *cmd*(command line):
 
-      * `conda create --name=labelme` - creat an environment name *labelme*
+      * `conda create --name=labelme python=2.7` - creat an environment name *labelme*
 
       * `activate labelme` - activate the *labelme* enviroment
 
@@ -21,6 +21,8 @@ To annotate an image we need two software
       * `activate labelme` - activate the *labelme* environment where we installed the *labelme* software by the above commands
 
       * `labelme` - run the *labelme* software
+      
+      
 
 ## *people_tagger* - Tool to annotate object keypoints
 
