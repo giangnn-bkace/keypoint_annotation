@@ -21,7 +21,8 @@ To annotate an image we need two software
       * `activate labelme` - activate the *labelme* environment where we installed the *labelme* software by the above commands
 
       * `labelme` - run the *labelme* software
-      
+   
+      ![labelme GUI](example_images/labelme.JPG)
       
 
 ## *people_tagger* - Tool to annotate object keypoints
