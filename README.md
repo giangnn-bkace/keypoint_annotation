@@ -24,6 +24,9 @@ To annotate an image we need two software
    
       ![labelme GUI](example_images/labelme.JPG)
       
+      * The boundary annotation will be save in a json file as below:
+      ![labelme json file example](example_images/boundary_json.JPG)
+      
 
 ## *people_tagger* - Tool to annotate object keypoints
 
