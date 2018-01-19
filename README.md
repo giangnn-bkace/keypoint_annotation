@@ -1,4 +1,4 @@
-# Keypoint Annotation
+# Keypoint Annotation - !only support for annotate 1 chimpanzee in 1 image (do not use for images have more than 1 chimpanzee)
 To annotate an image we need two software
 * [*labelme*](https://pypi.python.org/pypi/labelme) - Tool to annotate object boundary
 * [*people_tagger*](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/shape/hat/) - Tool to annotate object keypoints
