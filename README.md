@@ -31,7 +31,7 @@ Eg: chim_1.jpg chim_2.jpg
       
       * Save the all annotated boundary files in the *segmentation* folder 
       
-            ** ! these files have to have same name as image files **   
+            ! these files have to have same name as image files
       
             Eg: chim_1.json, chim_2.json
       
