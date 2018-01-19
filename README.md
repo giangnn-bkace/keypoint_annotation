@@ -31,11 +31,12 @@ Eg: chim_1.jpg chim_2.jpg
       
       * Save the all annotated boundary files in the *segmentation* folder 
       
-      **! these files have to have same name as image files**   
+            **! these files have to have same name as image files**   
       
-      Eg: chim_1.json, chim_2.json
+            Eg: chim_1.json, chim_2.json
       
       * The boundary annotation will be save in a json file as below:
+      
       ![labelme json file example](example_images/boundary_json.JPG)
       
 
@@ -44,13 +45,16 @@ Eg: chim_1.jpg chim_2.jpg
 2. **Launch the** *people_tagger.jnlp* **file**
 3. **Browse to the** *config_chimpanzee.xml* **file**
 4. **Annotate image using keyboard**
-- *left_arrow* : previous image
-- *right_arrow* : next image
-- *q* : nose
-- *w* : left_eye
-...
-See more in *config_chimpanzee.xml* file
-![keys](example_images/keyboard.JPG)
+      - *left_arrow* : previous image
+      - *right_arrow* : next image
+      - *q* : nose
+      - *w* : left_eye
+
+      ...
+
+      See more in *config_chimpanzee.xml* file
+
+      ![keys](example_images/keyboard.JPG)
 
 ## Convert annotated file to COCO_DATASET format
-* run `python convertXML2JSON.py --data_path data` an *annotation.json* file will be created
+      * run `python convertXML2JSON.py --data_path data` an *annotation.json* file will be created
