@@ -1,0 +1,89 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Test Deployment -->
+
+<jnlp spec="1.0+"
+  codebase="https://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/hat"
+  >
+
+  <information>
+    <title>People Tagger</title>
+    <vendor>Lubomir Bourdev</vendor>
+    <homepage href="https://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape"/>
+    <description>A tool for annotating the 3D pose of people</description>
+    <description kind="short">A tool for annotating the 3D pose of people</description>
+    <icon href="myicon.gif"/>
+    <icon kind="splash" href="mysplash.gif"/>
+    <offline-allowed/>
+  </information>
+
+  <security>
+    <all-permissions/>
+  </security>
+
+  <resources>
+    <j2se version="1.5+" initial-heap-size="256M" max-heap-size="1024M"/>
+    <jar href="people_tagger.jar" main="true"/>
+	<jar href="Jars/j3dcore.jar"/>
+	<jar href="Jars/j3dutils.jar"/>
+	<jar href="Jars/vecmath.jar"/>
+  </resources>
+
+<resources os="Windows" arch="x86">
+	<nativelib href = "Jars/windows-i586/j3dcore-ogl-chk_dll.jar"			/>
+	<nativelib href = "Jars/windows-i586/j3dcore-ogl_dll.jar"			/>
+	<nativelib href = "Jars/windows-i586/j3dcore-d3d_dll.jar"			/>
+  </resources>
+
+  <resources os="Windows" arch="amd64">
+	<nativelib href = "Jars/windows-amd64/j3dcore-ogl_dll.jar"			/>
+  </resources>
+
+  <resources os="Windows" arch="x86_64">
+	<nativelib href = "Jars/windows-amd64/j3dcore-ogl_dll.jar"			/>
+  </resources>
+
+
+
+
+  <resources os="Linux" arch="i386">
+	<nativelib href = "Jars/linux-i586/lib_j3dcore-ogl_so.jar"			/>
+  </resources>
+
+  <resources os="Linux" arch="x86">
+	<nativelib href = "Jars/linux-i586/lib_j3dcore-ogl_so.jar"			/>
+ </resources>
+
+  <resources os="Linux" arch="amd64">
+	<nativelib href = "Jars/linux-amd64/lib_j3dcore-ogl_so.jar"			/>
+  </resources>
+
+  <resources os="Linux" arch="x86_64">
+	<nativelib href = "Jars/linux-amd64/lib_j3dcore-ogl_so.jar"			/>
+  </resources>
+
+
+
+  <resources os="SunOS" arch="sparc">
+	<nativelib href = "Jars/solaris-sparc/lib_j3dcore-ogl_so.jar" 			/>
+ </resources>
+
+  <resources os="SunOS" arch="sparcv9">
+	<nativelib href = "Jars/solaris-sparc-v9/lib_j3dcore-ogl_so.jar"		/>
+ </resources>
+
+  <resources os="SunOS" arch="x86">
+	<nativelib href = "Jars/solaris-x86/lib_j3dcore-ogl_so.jar"			/>
+  </resources>
+
+  <resources os="SunOS" arch="amd64">
+	<nativelib href = "Jars/solaris-x86-amd64/lib_j3dcore-ogl_so.jar"		/>
+  </resources>
+
+  <resources os="SunOS" arch="x86_64">
+	<nativelib href = "Jars/solaris-x86-amd64/lib_j3dcore-ogl_so.jar"		/>
+  </resources>
+
+  <application-desc main-class="core.MainApp"/>
+
+</jnlp>

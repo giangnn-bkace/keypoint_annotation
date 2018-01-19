@@ -1,0 +1,53 @@
+<HATConfig>
+<Dataset name="chim"/>
+<!--
+If the image directory is not located in ./images, specify its location
+-->
+<!-- 
+<RootDirectory value="/hat/data" /> 
+ -->
+<!--
+ Optionally specifies the file containing the index list of the annotations. The default is "annotation_list.txt" which in H3D is the list of all annotations. You can use this to run the Java annotation tool on just the training or test annotations or another subset of your choice 
+-->
+<!--
+
+<AnnotationListName value="val_annotation_list.txt" /> 
+-->
+<!--
+Subcategories, if any. They will appear as horizontal radio buttons in the UI, so not too many
+<Subcategory name="male"/>
+-->
+<!--
+If marking segmentations, the name, color and shortcut key for each region
+-->
+<Region name="chimpanzee" key="p" color="0000AA"/>
+<!--
+Keypoint names, optional shortcuts and optional parent keypoints
+    The parent keypoints are only needed if you want to infer the 3D.
+    Helper keypoints are ones that can be inferred from others. They are not displayed nor saved
+    When specifying the parent, you can optionally specify the normalized length of the segment in 3D,
+    which could be optionally different for each subcategory. The length is needed for inferring 3D
+    See C. Taylor. "Reconstruction of Articulated Objects from Point Correspondences in a Single Image"
+    
+    3D reconstruction is enabled only with the person category.
+    However, if you use the same keypoints, with the same names as below,
+    you can use 3D for other mammal categories.
+-->
+<Keypoint name="nose" key="q"/>
+<Keypoint name="left_eye" key="w"/>
+<Keypoint name="right_eye" key="e"/>
+<Keypoint name="left_ear" key="r"/>
+<Keypoint name="right_ear" key="t"/>
+<Keypoint name="left_shoulder" key="a"/>
+<Keypoint name="right_shoulder" key="s"/>
+<Keypoint name="left_elbow" key="d"/>
+<Keypoint name="right_elbow" key="f"/>
+<Keypoint name="left_wrist" key="g"/>
+<Keypoint name="right_wrist" key="h"/>
+<Keypoint name="left_hip" key="j"/>
+<Keypoint name="right_hip" key="k"/>
+<Keypoint name="left_knee" key="z"/>
+<Keypoint name="right_knee" key="x"/>
+<Keypoint name="left_ankle" key="c"/>
+<Keypoint name="right_ankle" key="v"/>
+</HATConfig>
