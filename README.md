@@ -24,6 +24,8 @@ To annotate an image we need two software
    
       ![labelme GUI](example_images/labelme.JPG)
       
+      * Save the all annotated boundary files in the *segmentation* folder (! these files have same name as image files)
+      
       * The boundary annotation will be save in a json file as below:
       ![labelme json file example](example_images/boundary_json.JPG)
       
